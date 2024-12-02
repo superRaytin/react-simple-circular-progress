@@ -1,0 +1,45 @@
+{
+  "name": "react-simple-circular-progress",
+  "version": "1.0.0",
+  "description": "A simple circular progress indicator component for React.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint 'src/**/*.{js,ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{js,ts,tsx}' --fix",
+    "clean": "rm -rf lib",
+    "build": "npm run clean && tsc",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "repository": "https://github.com/superRaytin/react-simple-circular-progress",
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.3",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.16.0",
+    "@types/react": ">=17.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "globals": "^15.13.0",
+    "prettier": "^3.4.1",
+    "react": "17.0.2",
+    "typescript": "^5.7.0"
+  },
+  "keywords": [
+    "react",
+    "circular-indicator",
+    "circular-progress",
+    "simple-circular-progress"
+  ],
+  "license": "MIT"
+}
